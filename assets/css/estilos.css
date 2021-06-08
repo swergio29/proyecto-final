@@ -60,35 +60,7 @@
     .footer div .col {
       margin-left: 20%; }
 
-@media screen and (max-width: 800px) {
-  header nav {
-    width: 80%;
-    height: 100%;
-    left: -100%;
-    margin: 0;
-    position: fixed; }
-  header nav ul a {
-    display: block;
-    float: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-  .MenuBar {
-    display: block;
-    width: 100%;
-    background: #ccc; }
-  .MenuBar .btm {
-    display: block;
-    padding: 20px;
-    background: #024959;
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  .MenuBar span {
-    float: right;
-    font-size: 40px; } }
+
 
 /*mobile*/
 @media (min-width: 320px) {
