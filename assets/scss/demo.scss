@@ -18,46 +18,6 @@ $padding-size: 20px;
     margin: 0;
     padding: 0;
 }
-.header{
-    color: $primary-color;
-
-    nav{
-        width: 90%;
-    max-width: 550px;
-    margin: $padding-size auto;
-    background: #024959;
-
-        ul{
-            overflow: hidden;
-            list-style: none;
-            a{
-                float: left;
-                li{
-                    color: $secondary-color;
-                    padding: $padding-size;
-                    display: block;
-                    border-bottom: 1px solid #E1FFFF;
-                    text-decoration: none;
-                    span{
-                        margin-right: 10px;
-                    }
-                }
-            }
-            a:hover{
-                background: #037E8C;
-            }
-        }
-    }
-
-    h1{
-        color: rgb(247, 247, 247);
-        font-size: 200%;
-        margin-left: 37%;
-    }
-
-
-}
-
     .MenuBar span{
         float: right;
         font-size: 40px;

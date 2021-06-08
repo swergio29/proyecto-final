@@ -5,37 +5,6 @@
   margin: 0;
   padding: 0; }
 
-.header {
-  color: black; }
-  .header nav {
-    width: 90%;
-    max-width: 550px;
-    margin: 20px auto;
-    background: #024959; }
-    .header nav ul {
-      overflow: hidden;
-      list-style: none; }
-      .header nav ul a {
-        float: left; }
-        .header nav ul a li {
-          color: #FFF;
-          padding: 20px;
-          display: block;
-          border-bottom: 1px solid #E1FFFF;
-          text-decoration: none; }
-          .header nav ul a li span {
-            margin-right: 10px; }
-      .header nav ul a:hover {
-        background: #037E8C; }
-  .header h1 {
-    color: #f7f7f7;
-    font-size: 200%;
-    margin-left: 37%; }
-
-.MenuBar span {
-  float: right;
-  font-size: 40px; }
-
 .formulario {
   display: 12fr; }
 

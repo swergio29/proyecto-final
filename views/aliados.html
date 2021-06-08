@@ -98,7 +98,35 @@
                     <td>Calificacion 6</td>
                 </tr>   
             </table>
-        </section>         
+        </section>  
+        
+        <section class="formulario" id="form"> <!--FORMULARIO-->
+            <form action="">
+                <fieldset>
+                    <legend>datos personales</legend>
+                <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre"><br>
+                <label for="apellido"> Apellido:</label>
+            <input type="text" name="apellido"><br>
+                <label for="email">Email</label>
+            <input type="email" name="email"><br>
+                <label for="comentarios"></label>
+            <textarea name="comentarios" id="" cols="30" rows="10"></textarea><br>
+            <select name="genero">
+                <option value="seleccione">seleccione</option>
+                <option value="hombre">hombre</option>
+                <option value="mujer">mujer</option>
+                <option value="no_binario">no binario</option>
+            </select><br>
+            <label for="aceptar">aceptas que te enviemos mas informacion</label>
+            <input type="checkbox" name="aceptar" value="1" >
+        </fieldset>
+            <hr>
+            <input type="submit" value="enviar">
+            <input type="reset" value="reseteo">
+            <input type="button" value="ss">
+            </form>
+        </section>
             
             <!---------------------------- footer de la pagina ---------------------------->
 
