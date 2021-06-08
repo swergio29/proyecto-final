@@ -1,0 +1,261 @@
+/*estilos de scss*/
+//comentario solo en SASS// 
+$primary-color: black;
+$secondary-color: #FFF; 
+
+$primary-size: 36pt;
+
+$third-color: yellow;
+
+$fourth-color: rgb(131, 80, 80);
+
+$cuadro: 10px;
+
+$padding-size: 20px;
+
+/*-------------caracteres comunes----------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    color: $primary-color;
+
+    nav{
+        width: 90%;
+    max-width: 550px;
+    margin: $padding-size auto;
+    background: #024959;
+
+        ul{
+            overflow: hidden;
+            list-style: none;
+            a{
+                float: left;
+                li{
+                    color: $secondary-color;
+                    padding: $padding-size;
+                    display: block;
+                    border-bottom: 1px solid #E1FFFF;
+                    text-decoration: none;
+                    span{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            a:hover{
+                background: #037E8C;
+            }
+        }
+    }
+
+    h1{
+        color: rgb(247, 247, 247);
+        font-size: 200%;
+        margin-left: 37%;
+    }
+
+
+}
+
+    .MenuBar span{
+        float: right;
+        font-size: 40px;
+    }
+    
+    .formulario{
+        display: 12fr;
+    }
+    
+    
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: $primary-color;
+        overflow: hidden;
+        ul{
+            background-color: $primary-color;
+            float: right;
+            margin-right: 50%;
+            margin-top: 2%;
+            li{
+            color: $secondary-color;
+            margin-left: 10%;
+            }
+        }
+        div{
+            display: inline;
+            div{
+                color: $secondary-color;
+                padding: 10px;
+            }
+            .col{
+                margin-left: 20%;
+            }
+        }
+    }
+
+        @media screen and (max-width:800px) {
+            header nav{
+            width: 80%;
+            height: 100%;
+            left: -100%;
+            margin: 0;
+            position: fixed;
+        }
+        header nav ul a{
+            display: block;
+            float: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+        }
+        .MenuBar{
+            display: block;
+            width: 100%;
+            background: #ccc;
+        }
+        .MenuBar .btm {
+            display: block;
+            padding: $padding-size;
+            background: #024959;
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .MenuBar span{
+            float: right;
+            font-size: 40px;
+        }
+    }
+    /*mobile*/
+    @media (min-width: 320px) {
+        h1{
+            font-size: 14px;
+        }
+        body{
+            background-color: pink;
+        }
+    }
+    /*tablet*/
+    @media (min-width: 900px) {
+        body{
+            background-color: yellow;
+        }
+    }
+    /*desktop*/
+    @media (min-width: 1200px) {
+        body{
+            background-color: #ECEBFC;
+        }
+    }
+    #subtitulo{
+        font-size: 50px;
+    }
+    
+    h2{color: grey;
+    }
+    
+    /*-------------caracteres comunes----------------*/
+    /*-------------index-----------------------------*/
+
+.parrafo{
+    font-size: 40px;
+    font-style: oblique;
+    height: 400px;
+    width: 900px;
+    padding: 70px;
+    margin: 30px 100px $padding-size 30px;
+}
+
+@for $i from 1 through 4 {
+    .parrafo-#{$i}{
+        font-size: 2.5em / $i;
+    }
+}
+.parrafo__parr1{
+    font-size: $padding-size;
+    font-family:'Zen Dots', cursive;
+}
+.parrafo__parr2{
+    color: $fourth-color; 
+    font-family: 'Zen Dots', cursive;
+    font-size: $padding-size;
+}
+.footer div {
+    background-color: $primary-color;
+}
+
+.span {
+    font-weight: bold;
+}
+
+/*-------------index-----------------------------*/
+/*-------------aliados---------------------------*/
+
+#AC{
+    background-color: rgb(182, 189, 226);
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+/*-------------aliados---------------------------*/
+/*-------------descripciones---------------------*/
+
+#cuadro{background-color: rgb(196, 196, 196);
+    border-radius: $cuadro}
+    
+    .bordesRedondeados{
+        border-radius: 5px;
+    }    
+
+    #tit{
+        background-color: $third-color;
+    }
+/*-------------descripciones---------------------*/
+
+/*-------------recetario-------------------------*/
+.section nav{
+    display: flex;
+    padding-right: 10px;
+    flex-flow: row wrap;
+    background-color: rgb(209, 208, 208);
+    h3{
+        background-color: $third-color;
+    }
+}
+.section nav ul{
+    background-color: violet;
+    padding: 40px;
+    margin-right: 10px;
+}
+.section nav ol{
+    padding: 40px;
+    ;
+}
+.section h2{
+    font-size: 250%;
+    }
+
+/*-------------recetario-------------------------*/
+
+/*-------------reseñas---------------------------*/
+
+#grilla{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+}
+.resena{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    padding: $padding-size;
+    margin: $padding-size;
+    color: $third-color;
+    border: solid #fAf 5px;
+}
+
+/*-------------reseñas---------------------------*/

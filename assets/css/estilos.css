@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*estilos de scss*/
+/*-------------caracteres comunes----------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  color: black; }
+  .header nav {
+    width: 90%;
+    max-width: 550px;
+    margin: 20px auto;
+    background: #024959; }
+    .header nav ul {
+      overflow: hidden;
+      list-style: none; }
+      .header nav ul a {
+        float: left; }
+        .header nav ul a li {
+          color: #FFF;
+          padding: 20px;
+          display: block;
+          border-bottom: 1px solid #E1FFFF;
+          text-decoration: none; }
+          .header nav ul a li span {
+            margin-right: 10px; }
+      .header nav ul a:hover {
+        background: #037E8C; }
+  .header h1 {
+    color: #f7f7f7;
+    font-size: 200%;
+    margin-left: 37%; }
+
+.MenuBar span {
+  float: right;
+  font-size: 40px; }
+
+.formulario {
+  display: 12fr; }
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  overflow: hidden; }
+  .footer ul {
+    background-color: black;
+    float: right;
+    margin-right: 50%;
+    margin-top: 2%; }
+    .footer ul li {
+      color: #FFF;
+      margin-left: 10%; }
+  .footer div {
+    display: inline; }
+    .footer div div {
+      color: #FFF;
+      padding: 10px; }
+    .footer div .col {
+      margin-left: 20%; }
+
+@media screen and (max-width: 800px) {
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed; }
+  header nav ul a {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .MenuBar {
+    display: block;
+    width: 100%;
+    background: #ccc; }
+  .MenuBar .btm {
+    display: block;
+    padding: 20px;
+    background: #024959;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .MenuBar span {
+    float: right;
+    font-size: 40px; } }
+
+/*mobile*/
+@media (min-width: 320px) {
+  h1 {
+    font-size: 14px; }
+  body {
+    background-color: pink; } }
+
+/*tablet*/
+@media (min-width: 900px) {
+  body {
+    background-color: yellow; } }
+
+/*desktop*/
+@media (min-width: 1200px) {
+  body {
+    background-color: #ECEBFC; } }
+
+#subtitulo {
+  font-size: 50px; }
+
+h2 {
+  color: grey; }
+
+/*-------------caracteres comunes----------------*/
+/*-------------index-----------------------------*/
+.parrafo {
+  font-size: 40px;
+  font-style: oblique;
+  height: 400px;
+  width: 900px;
+  padding: 70px;
+  margin: 30px 100px 20px 30px; }
+
+.parrafo-1 {
+  font-size: 2.5em; }
+
+.parrafo-2 {
+  font-size: 1.25em; }
+
+.parrafo-3 {
+  font-size: 0.83333em; }
+
+.parrafo-4 {
+  font-size: 0.625em; }
+
+.parrafo__parr1 {
+  font-size: 20px;
+  font-family: 'Zen Dots', cursive; }
+
+.parrafo__parr2 {
+  color: #835050;
+  font-family: 'Zen Dots', cursive;
+  font-size: 20px; }
+
+.footer div {
+  background-color: black; }
+
+.span {
+  font-weight: bold; }
+
+/*-------------index-----------------------------*/
+/*-------------aliados---------------------------*/
+#AC {
+  background-color: #b6bde2;
+  border-radius: 10px;
+  font-size: 150%; }
+
+/*-------------aliados---------------------------*/
+/*-------------descripciones---------------------*/
+#cuadro {
+  background-color: #c4c4c4;
+  border-radius: 10px; }
+
+.bordesRedondeados {
+  border-radius: 5px; }
+
+#tit {
+  background-color: yellow; }
+
+/*-------------descripciones---------------------*/
+/*-------------recetario-------------------------*/
+.section nav {
+  display: flex;
+  padding-right: 10px;
+  flex-flow: row wrap;
+  background-color: #d1d0d0; }
+  .section nav h3 {
+    background-color: yellow; }
+
+.section nav ul {
+  background-color: violet;
+  padding: 40px;
+  margin-right: 10px; }
+
+.section nav ol {
+  padding: 40px; }
+
+.section h2 {
+  font-size: 250%; }
+
+/*-------------recetario-------------------------*/
+/*-------------reseñas---------------------------*/
+#grilla {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr; }
+
+.resena {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  padding: 20px;
+  margin: 20px;
+  color: yellow;
+  border: solid #fAf 5px; }
+
+/*-------------reseñas---------------------------*/
