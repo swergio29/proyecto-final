@@ -5,8 +5,8 @@
   margin: 0;
   padding: 0; }
 
-.formulario {
-  display: 12fr; }
+.formulario { 
+  justify-content: center;}
 
 .footer {
   width: 100%;
@@ -36,7 +36,12 @@
   h1 {
     font-size: 14px; }
   body {
-    background-color: pink; } }
+    background-color: pink; }
+    #grilla{
+      display: flex;
+
+    }
+}
 
 /*tablet*/
 @media (min-width: 900px) {
@@ -134,17 +139,20 @@ h2 {
 /*-------------recetario-------------------------*/
 /*-------------reseñas---------------------------*/
 #grilla {
+  padding-left: 40px;
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr 2fr; }
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  justify-content: center;
+  height: 100%;
+  
+}
 
-.resena {
-  width: 200px;
-  height: 200px;
-  background-color: black;
-  padding: 20px;
-  margin: 20px;
-  color: yellow;
-  border: solid #fAf 5px; }
+
+.Carta{
+    padding: 40px;
+    margin: 50px;
+
+  }
 
 /*-------------reseñas---------------------------*/
